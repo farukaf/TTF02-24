@@ -37,3 +37,10 @@ testem.log
 # System Files  
 .DS_Store  
 Thumbs.db   
+ 
+obj/*
+bin/*
+.vs/*
+**/obj/*
+**/bin/*
+**/.vs/*

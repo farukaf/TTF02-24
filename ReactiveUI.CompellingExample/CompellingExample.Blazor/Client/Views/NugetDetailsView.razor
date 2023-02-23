@@ -1,0 +1,19 @@
+﻿@inherits ReactiveComponentBase<NugetDetailsViewModel>
+<TableRow>
+    <TableRowCell>
+        <Figure Size="FigureSize.Is64x64">
+            <FigureImage Source="@ViewModel.IconUrl.ToString()" AlternateText="@ViewModel.Title"/>
+        </Figure>
+    </TableRowCell>
+    <TableRowCell Class="boxContent">
+        <header>
+            <h3>@ViewModel.Title</h3>
+        </header>
+        <main>@ViewModel.Description</main>
+        <footer>
+            <Blazorise.Link To="@ViewModel.ProjectUrl.ToString()">
+                open
+            </Blazorise.Link>
+        </footer>
+    </TableRowCell>
+</TableRow>
